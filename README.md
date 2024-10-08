@@ -24,7 +24,7 @@ If the two addresses are not the same then it means that you have data corruptio
 ## Cons
 
 - It only protects from `main` function and inside it, but it doesn't protect outside `main` function.
-- The **shadow stack** size is static (the more the callstack grows, the more the shadow stack grows but is limited by its size).
+- The **shadow stack** size is static (the more the callstack grows, the more the **shadow stack** grows but is limited by its size).
 - Loss of performance during execution because some code is added at enter and exit of each functions, using syscalls.
 
 ## Proof of concept
