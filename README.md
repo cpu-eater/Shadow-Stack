@@ -1,6 +1,6 @@
 # Shadow Stack
 
-This project is a basic implementation of a shadow stack in C language.   
+This project is a **basic implementation** of a shadow stack in C language.   
 It prevents rewriting stack addresses by creating a new stack called **shadow stack**, and can help mitigate stack-based buffer overflow exploitation techniques such as **ROP** *(Return-Oriented Programming)*.
 
 ## How does it work ?
