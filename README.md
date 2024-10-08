@@ -10,7 +10,7 @@ Some **GCC built-in** functions have been used :
 - `__cyg_profile_func_exit` : Allows for automatic profiling by inserting `__cyg_profile_func_exit` at the exit of each function in the code.
 - `__builtin_return_address(N)` : Returns the return address of a function from specified callstack level (defined by N).
 
-At the beginning of `main` function, the **shadow stack** is allocated on the heap using **sbrk**.  
+At the beginning of `main` function, the **shadow stack** is allocated on the heap using `sbrk`.  
 Then, the return address of the next callstack level is pushed to this **shadow stack**.  
 
 When a function will exit, the previous return address is popped and compared with the one from the next callstack level.  
