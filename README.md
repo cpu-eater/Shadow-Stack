@@ -49,6 +49,12 @@ int main(void)
 
 ### Without shadow stack protection
 
-```Bash
-segfault@lazy-laptop:~/Desktop/shadow_stack$ gcc main.c -o prog -g -fno-stack-protector -Wno-all
-```
+![gdb_without_protection](images/gdb_without_prot.png)
+
+A **SIGSEGV** occurs and the program crashed.
+
+### With shadow stack protection
+
+![gdb_with_protection](images/gdb_with_prot.png)
+
+The program exited normally after printing an error message.
